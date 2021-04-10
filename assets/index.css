@@ -1,0 +1,176 @@
+@charset "utf-8";
+/*外联引用出现问题*/
+/*按钮参数设置*/
+.mybtn_1{
+	background:#60a9c1;/*背景色*/
+	border-radius: 20px;/*圆角*/
+	color: white;/*字体颜色*/
+	padding:15px 32px;/*上下填充15px 左右填充32px*/
+	cursor: pointer;/*设置光标为手指*/
+	text-align: center;/*字体居中*/
+	text-decoration: none;/*字体样式设置为无*/
+	transition:all 1s;/*设置全部动画时间为1s*/
+	outline:none;/*设置点击外边框为无*/
+	border:none;/*设置点击边框为无*/
+	font-size:25px;/*字体大小*/
+	overflow: hidden;/*隐藏越界*/
+	position: relative;
+	transform:translate(-50%,0);
+}
+.mybtn_2{
+	background:#5bc189;/*背景色*/
+	border-radius: 20px;/*圆角*/
+	color: white;/*字体颜色*/
+	padding:15px 32px;/*上下填充15px 左右填充32px*/
+	cursor: pointer;/*设置光标为手指*/
+	text-align: center;/*字体居中*/
+	text-decoration: none;/*字体样式设置为无*/
+	transition:all 1s;/*设置全部动画时间为1s*/
+	outline:none;/*设置点击外边框为无*/
+	border:none;/*设置点击边框为无*/
+	font-size:25px;/*字体大小*/
+	overflow: hidden;/*隐藏越界*/
+	position: relative;
+	transform:translate(-50%,0);
+}
+.mybtn_1 span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;/*变换时间为1s*/
+}
+.mybtn_1 span:after {
+  content: '···>';
+  position: absolute;
+  opacity: 0;/*设置不透明度为全透明*/
+  top: 0px;
+  right: -30px;
+  transition: 0.3s;
+}/*变换后*/
+.mybtn_1:hover span {
+  padding-right: 40px;
+}
+.mybtn_1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.mybtn_1:after {
+    content: "";
+    background: #0f475f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -50px!important;
+    margin-top: -120%;
+    opacity: 0;
+	border-radius: 20px;
+    transition: all 0.8s
+}
+.mybtn_1:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.mybtn_2 span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;/*变换时间为1s*/
+}
+.mybtn_2 span:after {
+  content: '···>';
+  position: absolute;
+  opacity: 0;/*设置不透明度为全透明*/
+  top: 0px;
+  right: -30px;
+  transition: 0.3s;
+}/*变换后*/
+.mybtn_2:hover span {
+  padding-right: 40px;
+}
+.mybtn_2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.mybtn_2:after {
+    content: "";
+    background: #448c65;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -50px!important;
+    margin-top: -120%;
+    opacity: 0;
+	border-radius: 20px;
+    transition: all 0.8s
+}
+.mybtn_2:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+/*主页div设置*/
+.mydiv_1{
+	position: relative;
+	margin-left:50%;
+	margin-top:20px;
+}
+.mydiv_2{
+	position: relative;
+	margin-left:50%;
+	margin-top:20px;
+}
+/*设置主体样式*/
+.box{
+	background-image: url(../assets/logo.png); 
+	background-color:#313131;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height:500px;
+	border:none;
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+.theme{
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:30px;
+	font-size:20px;
+	color:#41413f;
+}
+.tip{
+	text-align:center;
+	margin-top:30px;
+	font-size:15px;
+	color:#57a6d6;
+	margin:0 auto;
+	background-color: transparent;
+	border: 0;
+	display: block;
+	vertical-align:middel;
+	outline:none;
+}
+#parent { 
+    width: 200px; 
+    height: 20px; 
+    border: 2px solid #F9B34B; 
+    background: #DDFFFF;   
+	border-radius: 13px;/*圆角*/
+	margin-top:20px;
+    display: none; 
+	margin-left:50%;
+	transform:translate(-50%,0);
+    } 
+#son { 
+    width: 0; 
+    height: 100%; 
+	border-radius:10px;/*圆角*/
+    background-image: linear-gradient(to right ,#0000FF, #00FFFF);
+    text-align: center; 
+	color:white;
+} 
